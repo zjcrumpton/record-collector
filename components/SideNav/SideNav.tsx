@@ -4,22 +4,32 @@ import styles from "./SideNav.module.css";
 
 const SideNav: FC = () => {
   return (
-    <nav className={styles.container}>
-      <div>
-        <h1>Record Collector</h1>
+    <nav className={styles.sidenav}>
+      <div className={styles.container}>
+        <div>
+          <h1 className={styles.title}>Record Collector</h1>
+        </div>
+        <div className={styles.container}>
+          <SmartLink
+            href="/"
+            className={styles.link}
+            activeClassName={styles.activeLink}
+            text="Home"
+          />
+          <SmartLink
+            href="/collection"
+            className={styles.link}
+            activeClassName={styles.activeLink}
+            text="My Collection"
+          />
+        </div>
       </div>
       <div className={styles.container}>
         <SmartLink
-          href="/"
+          href="/settings"
           className={styles.link}
           activeClassName={styles.activeLink}
-          text="Home"
-        />
-        <SmartLink
-          href="/profile"
-          className={styles.link}
-          activeClassName={styles.activeLink}
-          text="My Collection"
+          text="Settings"
         />
       </div>
     </nav>

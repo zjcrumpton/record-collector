@@ -1,15 +1,38 @@
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  width: 20vw;
+  max-width: 250px;
+  min-width: 200px;
+  border: none;
+  border-right: 1px solid #b6b8be;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.title {
+  color: #0d1d53;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .container {
   display: flex;
   flex-direction: column;
-  justify-items: center;
-  height: 100%;
-  width: 200px;
+  width: 100%;
+  gap: 10px;
 }
 
 .link {
   color: #9899a0;
+  font-size: 20px;
 }
 
 .activeLink {
   color: #4b7fc1;
+  font-size: 20px;
+  font-weight: bold;
 }

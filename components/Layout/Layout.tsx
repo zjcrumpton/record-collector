@@ -1,9 +1,10 @@
 import { FC } from "react";
 import { SideNav } from "../SideNav";
+import styles from "./Layout.module.css";
 
 const Layout: FC = ({ children }) => {
   return (
-    <div>
+    <div className={styles.layout}>
       <SideNav />
       {children}
     </div>
