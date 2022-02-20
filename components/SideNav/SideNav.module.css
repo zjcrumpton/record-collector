@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  height: 100%;
+  width: 200px;
+}
+
+.link {
+  color: #9899a0;
+}
+
+.activeLink {
+  color: #4b7fc1;
+}
